@@ -331,9 +331,9 @@ canvas, .text, .frame, .outline, img {
 }
 
 .tickerMain {
-  -webkit-transform: scale(0.33) translate(-9px, 112px) skew(2deg, -5deg);
-  -ms-transform: scale(0.33) translate(-9px, 112px) skew(2deg, -5deg);
-  transform: scale(0.33) translate(-9px, 112px) skew(2deg, -5deg);
+  -webkit-transform: scale(0.33) translate(-19px, 86px) skew(2deg, -6deg);
+  -ms-transform: scale(0.33) translate(-19px, 86px) skew(2deg, -6deg);
+  transform: scale(0.33) translate(-19px, 86px) skew(2deg, -6deg);
 }
 
 /*# sourceMappingURL=main.css.map */
