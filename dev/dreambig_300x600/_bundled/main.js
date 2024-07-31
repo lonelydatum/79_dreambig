@@ -85,7 +85,7 @@ function start() {
 
 	tl.add("f2", "+=" + READ.f1);
 	tl.set(".frame2", { opacity: 1 });
-	if (universalBanner.size === "320x50") {
+	if (universalBanner.size === "320x50" || universalBanner.size === "970x250") {
 		tl.to(".sky_palm", { opacity: 0, duration: .4 }, "f2");
 	}
 	tl.to(".frame1 .dream_big", { duration: .3, opacity: 0 }, "f2");
@@ -94,9 +94,9 @@ function start() {
 	tl.from(".cloud_gutar", { opacity: 0, x: bannerSize.w, duration: .3 });
 
 	tl.add("bar");
-	tl.from(".bar", { x: -100, y: 20, opacity: 0, duration: .3 });
-	tl.from(".t1", { x: -50, y: 10, opacity: 0, duration: .3 }, "bar+=.3");
-	tl.from(".date", { y: -20, opacity: 0, duration: .3 }, "bar");
+	// tl.from(".bar", {x:-100, y:20, opacity:0, duration:.3})
+	tl.from(".t1", { x: -50, y: 10, opacity: 0, duration: .3 }, "bar");
+	tl.from(".date", { y: -20, opacity: 0, duration: .3 }, "bar+=.2");
 	tl.from(".tickerMain", { opacity: 0, y: "+=60", ease: "back.out", duration: .4 }, "bar");
 	tl.call(ticker);
 
@@ -106,13 +106,13 @@ function start() {
 	tl.to(".t1", { opacity: 0, duration: .3 }, "f3");
 
 	tl.add("bike", "+=.3");
-	tl.from(".cloud_bike", { x: 100, opacity: 0, y: 100, duration: .5 }, "bike");
+	tl.from(".cloud_bike", { x: 100, opacity: 0, y: 60, duration: .5 }, "bike");
 	tl.from(".t2", { opacity: 0, x: -50, y: 10, duration: .3 }, "bike+=.3");
 
 	tl.add("end", "+=2");
 
 	tl.set(".frame3", { opacity: 1 }, "end");
-	tl.to(".cloud_bike", { x: -100, opacity: 0, y: -100, ease: "back.inOut", duration: .3 }, "end");
+	tl.to(".cloud_bike", { x: -100, opacity: 0, y: -60, ease: "back.inOut", duration: .3 }, "end");
 	tl.to(".footer-bar", { opacity: 0, duration: .3 });
 
 	tl.from(".frame3 .dream_big", { opacity: 0, y: 100, ease: "back.out", duration: .4 }, "end+=.3");

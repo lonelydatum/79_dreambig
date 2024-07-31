@@ -1,3 +1,40 @@
 @import '../../../_common/styles/b970x250.scss';
+@import '../../../_common/styles/dreambig.scss';
 
 
+.frame3{
+	// opacity: 1;
+}
+
+.frame1{
+	.dream_big{
+		transform-origin: 0 0;
+		
+		@include pos-scale(-59, -35, .665);
+	}
+}
+
+.bar{
+	display: none;
+}
+
+
+
+
+.cloud{
+	// @include pos(-17, 0);
+
+}
+
+
+.tickerMain{	
+	
+	transform: scale(0.3) translate(306px, 2px) skew(0deg, -7deg);
+}
+
+#legalBtn{	
+	@include pos(910, 0);	
+	width: 60px;
+	// opacity: 1;
+	// display: block;
+}
