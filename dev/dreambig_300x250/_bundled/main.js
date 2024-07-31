@@ -115,7 +115,9 @@ function start() {
 	tl.from(".frame3 .dream_big", { opacity: 0, y: 100, ease: "back.out", duration: .4 }, "end+=.3");
 	tl.from(".phone", { opacity: 0, y: 100, ease: "back.out", duration: .4 }, "end+=.4");
 	tl.from(".cta", { opacity: 0, duration: .3 }, "+=.5");
-	tl.add((0, _proline.olg)());
+	tl.add("wedge", "+=.3");
+	tl.from(".legal", { opacity: 0, duration: .3 }, "wedge");
+	tl.add((0, _proline.olg)(), "wedge");
 
 	// tl.play("end")
 }
