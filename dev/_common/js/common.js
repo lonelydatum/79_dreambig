@@ -70,11 +70,11 @@ function start(){
 		}
 	});
 	
-	tl.set(".frame1", {opacity:1})
+	tl.set([".frame0", ".frame1"], {opacity:1})
 	tl.add("f1", "+=.3")
 	
 	tl.from(".frame1 .dream_big", {y:bannerSize.h, ease:"back.out", duration:.5}, "f1")
-	tl.from(".cloud_palm", {x:-100, opacity:0, ease:"power2.out",  duration:.8}, "f1")
+	tl.from(".cloud_palm", {x:-100, opacity:0, ease:"power2.out",  duration:.4}, "f1")
 
 
 	tl.add("f2", `+=${READ.f1}`)
@@ -87,21 +87,20 @@ function start(){
 	
 
 	tl.add("bar")
-	tl.from(".bar", {x:-100, y:20, opacity:0, duration:.3}, "bar")
-	tl.from(".t1", {x:-100, y:20, opacity:0, duration:.3}, "bar+=.2")
-	tl.from(".date", {y:-20, opacity:0, duration:.3}, "bar+=.4")
-	
-	tl.from(".tickerMain", {opacity:0, y:"+=100", ease:"back.out", duration:.3})
+	tl.from(".bar", {x:-100, y:20, opacity:0, duration:.3})
+	tl.from(".t1", {x:-50, y:10, opacity:0, duration:.3}, "bar+=.3")
+	tl.from(".date", {y:-20, opacity:0, duration:.3}, "bar")	
+	tl.from(".tickerMain", {opacity:0, y:"+=60", ease:"back.out", duration:.4}, "bar")
 	tl.call(ticker)
 
 	tl.add("f3", "+=3")
 	tl.to(".tickerMain", {opacity:0, duration:.3}, "f3")
 	tl.to(".cloud_gutar", {opacity:0, x:100, duration:.3}, "f3")
-	
+	tl.to(".t1", {opacity:0, duration:.3}, "f3")
+
 	tl.add("bike", "+=.3")
-	tl.from(".cloud_bike", {x:100, opacity:0, y:100, duration:.5}, "bike")
-	tl.to(".t1", {opacity:0, duration:.3}, "bike")
-	tl.from(".t2", {opacity:0, duration:.3}, "bike")
+	tl.from(".cloud_bike", {x:100, opacity:0, y:100, duration:.5}, "bike")	
+	tl.from(".t2", {opacity:0, x:-50, y:10, duration:.3}, "bike+=.3")
 	
 
 	tl.add("end", "+=2")
