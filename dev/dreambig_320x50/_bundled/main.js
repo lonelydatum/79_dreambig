@@ -94,10 +94,10 @@ function start() {
 	tl.from(".cloud_gutar", { opacity: 0, x: bannerSize.w, duration: .3 });
 
 	tl.add("bar");
-	// tl.from(".bar", {x:-100, y:20, opacity:0, duration:.3})
-	tl.from(".t1", { x: -50, y: 10, opacity: 0, duration: .3 }, "bar");
-	tl.from(".date", { y: -20, opacity: 0, duration: .3 }, "bar+=.2");
-	tl.from(".tickerMain", { opacity: 0, y: "+=60", ease: "back.out", duration: .4 }, "bar");
+	tl.from(".bar", { x: -100, y: 20, opacity: 0, duration: .3 }, "bar");
+	tl.from(".t1", { x: -50, y: 10, opacity: 0, duration: .3 }, "bar+=.3");
+	tl.from(".date", { y: -20, opacity: 0, duration: .3 }, "bar+=.3");
+	tl.from(".tickerMain", { opacity: 0, y: "+=60", ease: "back.out", duration: .4 }, "bar+=.3");
 	tl.call(ticker);
 
 	tl.add("f3", "+=3");
