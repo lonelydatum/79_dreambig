@@ -19,7 +19,7 @@ gsap.defaults({
 });
 
 var READ = {
-	f1: 1.1,
+	f1: 1.8,
 	f2: 1,
 	f3: 1
 
@@ -164,7 +164,7 @@ exports.olg = olg;
 
 var _commonJsCommonJs = require('../../_common/js/common.js');
 
-(0, _commonJsCommonJs.b_160x600)();
+(0, _commonJsCommonJs.start)();
 
 },{"../../_common/js/common.js":1}]},{},[4])
 

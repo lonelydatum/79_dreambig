@@ -19,7 +19,7 @@ gsap.defaults({
 });
 
 var READ = {
-	f1: 1.1,
+	f1: 1.8,
 	f2: 1,
 	f3: 1
 

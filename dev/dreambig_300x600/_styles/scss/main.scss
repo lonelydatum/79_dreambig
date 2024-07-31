@@ -1,8 +1,10 @@
 @import '../../../_common/styles/common.scss';
+@import '../../../_common/styles/dreambig.scss';
 #banner{
-	width: 300px;
-	height: 600px;
+ width: 300px;
+ height: 600px; 
 }
+
 
 
 
@@ -14,11 +16,32 @@
 	;
 }
 
+#legalBtn{	
+	@include pos(240, 0);	
+	width: 60px;
+}
 
 
+
+.frame3{
+	// opacity: 1;
+}
+
+
+.frame3{
+	.dream_big{
+		@include pos-scale(-21, 61, .675);
+		
+	}
+}
+
+
+.tickerMain{
+	transform: scale(0.558) translate(-32px, 346px) skew(2deg, -6deg);
+}
 
 #legalBtn{	
-	@include pos(206, 551);	
-	width: 92px;
+	@include pos(240, 0);	
+	width: 60px;
 	// opacity: 1;
 }

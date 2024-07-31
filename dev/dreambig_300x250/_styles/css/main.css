@@ -236,20 +236,24 @@ canvas, .text, .frame, .outline, img {
 }
 
 .cardWrapper .card .cardFace.back img.num {
-  -webkit-transform: translate(0px, -7px);
-  -ms-transform: translate(0px, -7px);
-  transform: translate(0px, -7px);
+  -webkit-transform: translate(0px, -8px);
+  -ms-transform: translate(0px, -8px);
+  transform: translate(0px, -8px);
 }
 
 .cardWrapper .card .cardFace.front img.num {
-  -webkit-transform: translate(0px, 7px);
-  -ms-transform: translate(0px, 7px);
-  transform: translate(0px, 7px);
+  -webkit-transform: translate(0px, 8px);
+  -ms-transform: translate(0px, 8px);
+  transform: translate(0px, 8px);
 }
 
 .cloud {
   mix-blend-mode: screen;
   opacity: .8;
+}
+
+.cloud-gutar {
+  mix-blend-mode: lighten;
 }
 
 .faker {
@@ -272,32 +276,15 @@ canvas, .text, .frame, .outline, img {
 }
 
 .faker .b img.num {
-  -webkit-transform: translate(0px, -7px);
-  -ms-transform: translate(0px, -7px);
-  transform: translate(0px, -7px);
-}
-
-.frame3 .dream_big {
-  -webkit-transform: translate(-18px, 19px) scale(0.76, 0.76);
-  -ms-transform: translate(-18px, 19px) scale(0.76, 0.76);
-  transform: translate(-18px, 19px) scale(0.76, 0.76);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  position: absolute;
-}
-
-.tickerMain {
-  -webkit-transform: scale(0.33) translate(-9px, 112px) skew(2deg, -5deg);
-  -ms-transform: scale(0.33) translate(-9px, 112px) skew(2deg, -5deg);
-  transform: scale(0.33) translate(-9px, 112px) skew(2deg, -5deg);
+  -webkit-transform: translate(0px, -8px);
+  -ms-transform: translate(0px, -8px);
+  transform: translate(0px, -8px);
 }
 
 .tickerMain .ticker-item .rings {
-  -webkit-transform: translate(-7px, 0px);
-  -ms-transform: translate(-7px, 0px);
-  transform: translate(-7px, 0px);
+  -webkit-transform: translate(-8px, 0px);
+  -ms-transform: translate(-8px, 0px);
+  transform: translate(-8px, 0px);
   z-index: 100;
 }
 
@@ -330,6 +317,23 @@ canvas, .text, .frame, .outline, img {
   top: 151px;
   background: black;
   background: linear-gradient(180deg, black 0%, black 15%, transparent 100%);
+}
+
+.frame3 .dream_big {
+  -webkit-transform: translate(-18px, 19px) scale(0.76, 0.76);
+  -ms-transform: translate(-18px, 19px) scale(0.76, 0.76);
+  transform: translate(-18px, 19px) scale(0.76, 0.76);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.tickerMain {
+  -webkit-transform: scale(0.33) translate(-9px, 112px) skew(2deg, -5deg);
+  -ms-transform: scale(0.33) translate(-9px, 112px) skew(2deg, -5deg);
+  transform: scale(0.33) translate(-9px, 112px) skew(2deg, -5deg);
 }
 
 /*# sourceMappingURL=main.css.map */
