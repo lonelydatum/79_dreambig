@@ -79,7 +79,9 @@ function start(){
 
 	tl.add("f2", `+=${READ.f1}`)
 	tl.set(".frame2", {opacity:1})
-
+	if(universalBanner.size==="320x50"){
+		tl.to(".sky_palm", { opacity:0, duration:.4}, "f2")	
+	}
 	tl.to(".frame1 .dream_big", {duration:.3, opacity:0}, "f2")
 	tl.to([".cloud_palm"], {x:-50, duration:.3, opacity:0}, "f2")
 	tl.from(".logo_max", {opacity:0, duration:.3}, "f2")
@@ -104,6 +106,7 @@ function start(){
 	
 
 	tl.add("end", "+=2")
+
 	tl.set(".frame3", {opacity:1}, "end")
 	tl.to(".cloud_bike", {x:-100, opacity:0, y:-100, ease:"back.inOut", duration:.3}, "end")
 	tl.to(".footer-bar", {opacity:0, duration:.3})

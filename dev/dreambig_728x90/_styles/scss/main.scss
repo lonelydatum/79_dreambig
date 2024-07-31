@@ -1,3 +1,34 @@
 @import '../../../_common/styles/b728x90.scss';
+@import '../../../_common/styles/dreambig.scss';
 
 
+
+
+.frame1{
+	.dream_big{
+		transform-origin: 0 0;
+		@include pos-scale(41, 0, .5);
+	}
+}
+
+.bar{
+	display: none;
+}
+
+
+
+
+.cloud{
+	@include pos(-17, 0);
+
+}
+
+
+.tickerMain{	
+	transform: scale(0.223) translate(-753px, 40px) skew(0deg, -7deg);
+}
+
+#legalBtn{	
+	@include pos(670, 0);	
+	width: 60px;
+}
