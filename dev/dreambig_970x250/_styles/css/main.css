@@ -249,12 +249,19 @@ canvas, .text, .frame, .outline, img {
 }
 
 .phone {
-  -webkit-filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.5));
-  filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.5));
+  -webkit-filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.5));
+  filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.5));
 }
 
 .cloud {
   mix-blend-mode: screen;
+}
+
+.cloud-blenmode {
+  mix-blend-mode: screen;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
 
 .cloud-gutar {
@@ -324,7 +331,41 @@ canvas, .text, .frame, .outline, img {
   background: linear-gradient(180deg, black 0%, black 15%, transparent 100%);
 }
 
-.frame1 .dream_big {
+.frame1 .cloud-blenmode {
+  -webkit-transform: translate(365px, 181px) scale(1.3, 1.3);
+  -ms-transform: translate(365px, 181px) scale(1.3, 1.3);
+  transform: translate(365px, 181px) scale(1.3, 1.3);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame2 .cloud-blenmode {
+  -webkit-transform: translate(366px, 70px) scale(0.8, 0.8);
+  -ms-transform: translate(366px, 70px) scale(0.8, 0.8);
+  transform: translate(366px, 70px) scale(0.8, 0.8);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+  opacity: .9;
+}
+
+.frame3 .cloud-blenmode {
+  -webkit-transform: translate(294px, 161px) scale(0.85, 0.85);
+  -ms-transform: translate(294px, 161px) scale(0.85, 0.85);
+  transform: translate(294px, 161px) scale(0.85, 0.85);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame1 .dream_big_logo {
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
@@ -343,9 +384,9 @@ canvas, .text, .frame, .outline, img {
 }
 
 .tickerMain {
-  -webkit-transform: scale(0.3) translate(306px, 2px) skew(0deg, -7deg);
-  -ms-transform: scale(0.3) translate(306px, 2px) skew(0deg, -7deg);
-  transform: scale(0.3) translate(306px, 2px) skew(0deg, -7deg);
+  -webkit-transform: scale(0.3) translate(306px, 8px) skew(0deg, -7deg);
+  -ms-transform: scale(0.3) translate(306px, 8px) skew(0deg, -7deg);
+  transform: scale(0.3) translate(306px, 8px) skew(0deg, -7deg);
 }
 
 #legalBtn {

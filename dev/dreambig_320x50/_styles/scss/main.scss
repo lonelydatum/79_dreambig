@@ -5,6 +5,19 @@
 @import '../../../_common/styles/dreambig.scss';
 
 
+.frame2{
+	// opacity: 1;
+}
+
+
+.frame2 .cloud-blenmode{	
+	@include pos-scale(-50, 7, .27);  
+	opacity: .92;  
+}
+
+
+
+
 .t1, .t2{
 	transform-origin: 0 0;
 	@include pos-scale(0, 0, .5);

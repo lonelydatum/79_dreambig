@@ -248,12 +248,19 @@ canvas, .text, .frame, .outline, img {
 }
 
 .phone {
-  -webkit-filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.5));
-  filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.5));
+  -webkit-filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.5));
+  filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.5));
 }
 
 .cloud {
   mix-blend-mode: screen;
+}
+
+.cloud-blenmode {
+  mix-blend-mode: screen;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
 
 .cloud-gutar {
@@ -323,10 +330,44 @@ canvas, .text, .frame, .outline, img {
   background: linear-gradient(180deg, black 0%, black 15%, transparent 100%);
 }
 
-.frame3 .dream_big {
-  -webkit-transform: translate(-18px, 19px) scale(0.76, 0.76);
-  -ms-transform: translate(-18px, 19px) scale(0.76, 0.76);
-  transform: translate(-18px, 19px) scale(0.76, 0.76);
+.frame1 .cloud-blenmode {
+  -webkit-transform: translate(20px, 170px) scale(0.9, 0.9);
+  -ms-transform: translate(20px, 170px) scale(0.9, 0.9);
+  transform: translate(20px, 170px) scale(0.9, 0.9);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame2 .cloud-blenmode {
+  -webkit-transform: translate(38px, 92px) scale(0.8, 0.8);
+  -ms-transform: translate(38px, 92px) scale(0.8, 0.8);
+  transform: translate(38px, 92px) scale(0.8, 0.8);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+  opacity: .9;
+}
+
+.frame3 .cloud-blenmode {
+  -webkit-transform: translate(-43px, 141px) scale(0.76, 0.76);
+  -ms-transform: translate(-43px, 141px) scale(0.76, 0.76);
+  transform: translate(-43px, 141px) scale(0.76, 0.76);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame3 .dream_big_logo {
+  -webkit-transform: translate(-53px, -9px) scale(0.76, 0.76);
+  -ms-transform: translate(-53px, -9px) scale(0.76, 0.76);
+  transform: translate(-53px, -9px) scale(0.76, 0.76);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

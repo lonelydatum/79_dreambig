@@ -248,12 +248,19 @@ canvas, .text, .frame, .outline, img {
 }
 
 .phone {
-  -webkit-filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.5));
-  filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.5));
+  -webkit-filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.5));
+  filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.5));
 }
 
 .cloud {
   mix-blend-mode: screen;
+}
+
+.cloud-blenmode {
+  mix-blend-mode: screen;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
 
 .cloud-gutar {
@@ -321,6 +328,40 @@ canvas, .text, .frame, .outline, img {
   top: 151px;
   background: black;
   background: linear-gradient(180deg, black 0%, black 15%, transparent 100%);
+}
+
+.frame1 .cloud-blenmode {
+  -webkit-transform: translate(-39px, 306px) scale(0.8, 0.8);
+  -ms-transform: translate(-39px, 306px) scale(0.8, 0.8);
+  transform: translate(-39px, 306px) scale(0.8, 0.8);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame2 .cloud-blenmode {
+  -webkit-transform: translate(-29px, 272px) scale(0.8, 0.8);
+  -ms-transform: translate(-29px, 272px) scale(0.8, 0.8);
+  transform: translate(-29px, 272px) scale(0.8, 0.8);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+  opacity: .9;
+}
+
+.frame3 .dream_big.cloud-blenmode {
+  -webkit-transform: translate(-39px, 188px) scale(0.8, 0.8);
+  -ms-transform: translate(-39px, 188px) scale(0.8, 0.8);
+  transform: translate(-39px, 188px) scale(0.8, 0.8);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
 }
 
 .frame3 .dream_big {

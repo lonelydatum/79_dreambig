@@ -1,7 +1,7 @@
 
 
 
- .cardWrapper{
+.cardWrapper{
   position:absolute;
   -webkit-font-smoothing:antialiased;
   
@@ -23,14 +23,20 @@
 
 .phone{
 
-   -webkit-filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, .5));
-         filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, .5));
+ -webkit-filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, .5));
+ filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, .5));
 }
 
 .cloud{
   mix-blend-mode: screen;
   // opacity:.8;
 }
+.cloud-blenmode{
+  mix-blend-mode: screen;
+  transform-origin: 50% 50%;
+}
+ 
+
 
 .cloud-gutar{
   mix-blend-mode: lighten;  
@@ -65,7 +71,7 @@
 
 .tickerMain{
 
-  
+
   .ticker-item {
     .rings{
       transform:  translate(-8px, 0px);

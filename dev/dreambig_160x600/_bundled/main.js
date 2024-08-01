@@ -115,8 +115,8 @@ function start() {
 	tl.to(".cloud_bike", { x: -100, opacity: 0, y: -60, ease: "back.inOut", duration: .3 }, "end");
 	tl.to(".footer-bar", { opacity: 0, duration: .3 });
 
-	tl.from(".frame3 .dream_big", { opacity: 0, y: 100, ease: "back.out", duration: .4 }, "end+=.3");
-	tl.from(".phone", { opacity: 0, y: 100, ease: "back.out", duration: .4 }, "end+=.4");
+	tl.from(".frame3 .dream_big", { opacity: 0, y: "+=100", ease: "back.out", duration: .4 }, "end+=.3");
+	tl.from(".phone", { opacity: 0, y: "+=100", ease: "back.out", duration: .4 }, "end+=.4");
 	tl.from(".cta", { opacity: 0, duration: .3 }, "+=.5");
 	tl.add("wedge", "+=.3");
 	tl.from(".legal", { opacity: 0, duration: .3 }, "wedge");

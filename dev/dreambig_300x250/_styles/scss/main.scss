@@ -2,18 +2,27 @@
 @import '../../../_common/styles/b300x250.scss';
 @import '../../../_common/styles/dreambig.scss';
 
-.frame3{
-  .dream_big{
-    @include pos-scale(-18, 19, .76);
-  }
+.frame1 .cloud-blenmode{  
+  @include pos-scale(20, 170, .9);
+} 
+
+.frame2 .cloud-blenmode{
+  @include pos-scale(38, 92, .8);
+  opacity: .9;  
 }
 
-.frame2{
-  // opacity: 1;
+.frame3 .cloud-blenmode{    
+    @include pos-scale(-43, 141, .76);  
+}
+
+
+
+.frame3 .dream_big_logo{
+  @include pos-scale(-53, -9, .76);
 }
 
 .tickerMain{
-  
   transform: scale(0.33) translate(-19px, 86px) skew(2deg, -6deg);
+
 
 }
